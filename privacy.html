@@ -28,7 +28,7 @@
   <div class="wrap narrow">
     <p class="eyebrow">Privacy</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective date: 25 November 2026</p>
+    <p class="updated">Effective date: 27 November 2026</p>
 
     <h2>1. The short version</h2>
     <div class="callout">
@@ -37,6 +37,7 @@
 
     <h2>2. Who we are</h2>
     <p>Between Years (&ldquo;the App&rdquo;) is an independent app based in the Hong Kong Special Administrative Region. In this policy, &ldquo;we&rdquo;, &ldquo;us&rdquo; and &ldquo;our&rdquo; refer to the developer of the App, whose details are in section 15. You can contact us at <a class="text-link" href="mailto:betweenyears.support@gmail.com">betweenyears.support@gmail.com</a>.</p>
+    <p>This policy covers the App. Our website is hosted on GitHub Pages, which may collect technical information such as your IP address under <a class="text-link" href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub&rsquo;s Privacy Statement</a>.</p>
 
     <h2>3. What we do not collect</h2>
     <p>We do not collect, store, sell or share any personal information about you. In particular, the App does not include:</p>
@@ -49,12 +50,15 @@
     <p>The App&rsquo;s daily questions are built into the App, so it does not need to contact any server to show them.</p>
 
     <h2>4. Information stored on your device</h2>
-    <p>Your diary entries, photos, settings and preferences are stored locally on your device. Your diary entries and photos are encrypted with AES-256, using a key that is created on your device the first time you open the App and kept in your device&rsquo;s secure storage (the iOS Keychain or Android Keystore), separately from your diary files. Photos you add may contain information such as the date and place they were taken.</p>
+    <p>Your diary entries, photos, settings and preferences are stored locally on your device. Your diary entries and photos are encrypted with AES-256, using a key that is created on your device the first time you open the App and kept in your device&rsquo;s secure storage (the iOS Keychain or Android Keystore), separately from your diary files.</p>
+    <p>The App only accesses the photos you choose to add. It does not scan your photo library. When you add a photo, the App removes its location and other metadata (EXIF).</p>
     <p>This information never leaves your device unless you choose to back it up, export it or share it, as described below. We have no access to it.</p>
 
     <h2>5. Passcode, biometrics and recovery code</h2>
     <p>You can protect the App with a passcode. If you turn on Face ID, Touch ID or fingerprint unlock, authentication is handled entirely by your device&rsquo;s operating system. The App only receives a &ldquo;success&rdquo; or &ldquo;failure&rdquo; result and never has access to your biometric data.</p>
     <p>You may choose to create a 12-character recovery code. Your passcode and recovery code are stored securely on your device. Because we never receive them, we cannot reset your passcode or recover your diary for you.</p>
+    <p>If you forget your passcode, you can reset it with your recovery code or, unless you have turned this off, with your device&rsquo;s own passcode. If neither is available, the only way back into the App is to erase the diary on this device.</p>
+    <p>If the device passcode option is on, anyone who knows your device passcode may be able to reset your App passcode. You can turn this off in the App&rsquo;s settings.</p>
 
     <h2>6. Notifications</h2>
     <p>Daily reminders are scheduled locally on your device. They do not use a push-notification service, and no information is sent to us.</p>
@@ -63,7 +67,7 @@
     <p>You can choose to back up your diary to your own cloud account: iCloud on iPhone, or Google Drive on Android. Backups go directly from your device to your account and never pass through any server operated by us.</p>
     <h3>Backup password (optional)</h3>
     <ul>
-      <li>Backups are not encrypted by the App unless you set a backup password in Settings &gt; Backup password.</li>
+      <li>Backups are not encrypted by the App unless you set a backup password in Settings &gt; Backup &amp; Data &gt; Automatic Backup.</li>
       <li>If you set a backup password, your backup, including photos, is encrypted on your device with AES-256 before it is uploaded. Neither we, Apple nor Google can read it, and it cannot be restored without that password.</li>
       <li>If you do not set a backup password, your backup, including photos, is uploaded in readable form and is protected only by the security of your Apple or Google account.</li>
       <li>We never store your backup password. A key derived from it is kept in your device&rsquo;s secure storage so that automatic backups can run. You can remove the password at any time.</li>
@@ -77,17 +81,19 @@
     <ul>
       <li>You sign in with your Google account through Google&rsquo;s own sign-in screen. We never see your Google password.</li>
       <li>The App requests only the <code>drive.appdata</code> permission. This lets the App create and read its own files in a private, hidden app folder in your Google Drive. The App cannot see, open or change any other files in your Drive.</li>
-      <li>Your Google account name or email address may be stored on your device only to show which account is connected.</li>
+      <li>Your Google account email address may be stored on your device only to show which account is connected.</li>
       <li>The backup is stored by Google under <a class="text-link" href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google&rsquo;s Privacy Policy</a>. You can delete it at any time in Google Drive under Settings &gt; Manage apps, and you can remove the App&rsquo;s access at <a class="text-link" href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</li>
       <li>The App&rsquo;s use and transfer of information received from Google APIs adheres to the <a class="text-link" href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
     </ul>
     <p>Because cloud backups are designed to be restored through the App, we recommend also using the export feature to keep a copy you can open yourself.</p>
 
     <h2>8. Device backups</h2>
-    <p>Your device&rsquo;s own backup service (such as iCloud Backup on iPhone or Google backup on Android) may include the App&rsquo;s data. These backups are controlled by Apple or Google and your device settings, not by us. Because the key that protects your diary is kept in your device&rsquo;s secure storage, it may not be included in a device backup, so a device backup alone may not be enough to restore your diary. Please use the App&rsquo;s own backup or export feature.</p>
+    <p><strong>iPhone:</strong> Your device&rsquo;s own backup service (iCloud Backup or a computer backup) may include the App&rsquo;s data. These backups are controlled by Apple and your device settings, not by us. Because the key that protects your diary is kept in your device&rsquo;s secure storage, it may not be included in a device backup, so a device backup alone may not be enough to restore your diary.</p>
+    <p><strong>Android:</strong> The App opts out of Android&rsquo;s device backup and device-to-device transfer, so the App&rsquo;s data is not included in them.</p>
+    <p>To move your diary to a new device, please use the App&rsquo;s own backup or export feature.</p>
 
     <h2>9. Export and sharing</h2>
-    <p>You can export your diary as a JSON file, or as a ZIP file that also contains your photos. Exported files are not encrypted. Anyone who can access the file can read your entries, so please store it carefully.</p>
+    <p>You can export your diary as a JSON file or, if your diary has photos, as a ZIP file that also contains your photos. Exported files are not encrypted. Anyone who can access the file can read your entries and see your photos, so please store it carefully.</p>
     <p>If you share a screenshot or content from the App using your device&rsquo;s share options, the destination app&rsquo;s own privacy policy applies.</p>
 
     <h2>10. In-app purchases</h2>
@@ -102,7 +108,7 @@
     <ul>
       <li><strong>Access and export:</strong> use the App&rsquo;s export feature.</li>
       <li><strong>Correct:</strong> edit your entries in the App.</li>
-      <li><strong>Delete:</strong> delete entries in the App, delete the App, and remove your cloud backup as described in section 7.</li>
+      <li><strong>Delete:</strong> delete entries in the App, delete the App, and remove your cloud backup as described in section 7. On iPhone, some security items kept in the Keychain may remain after the App is deleted, but they cannot be used to read your diary without its files.</li>
     </ul>
     <p>If you have a question about your rights, contact us at <a class="text-link" href="mailto:betweenyears.support@gmail.com">betweenyears.support@gmail.com</a>. You may also complain to your local data protection authority.</p>
 
